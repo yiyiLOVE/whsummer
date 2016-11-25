@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width: 50px;
+			height: 50px;
+			margin: 10px;
+			background-color: #f00;
+		}
+		.box1{
+			-webkit-animation: mymove 5s 1s forwards linear;
+			-o-animation: mymove 5s 1s forwards linear;
+			animation: mymove 5s 1s forwards linear;
+		}
+		.box2{
+			-webkit-animation: mymove 5s 1s forwards ease;
+			-o-animation: mymove 5s 1s forwards ease;
+			animation: mymove 5s 1s forwards ease;
+		}
+		.box3{
+			-webkit-animation: mymove 5s 1s forwards ease-in;
+			-o-animation: mymove 5s 1s forwards ease-in;
+			animation: mymove 5s 1s forwards ease-in;
+		}
+		.box4{
+			-webkit-animation: mymove 5s 1s forwards ease-out;
+			-o-animation: mymove 5s 1s forwards ease-out;
+			animation: mymove 5s 1s forwards ease-out;
+		}
+		.box4{
+			-webkit-animation: mymove 5s 1s forwards -in-out;
+			-o-animation: mymove 5s 1s forwards -in-out;
+			animation: mymove 5s 1s forwards -in-out;
+		}
+		@keyframes mymove{
+			0%{
+				-webkit-transform: translate(0,0);
+				-ms-transform: translate(0,0);
+				-o-transform: translate(0,0);
+				transform: translate(0,0);
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box101"></div>
+	<div class="box102"></div>
+	<div class="box103"></div>
+	<div class="box104"></div>
+	<div class="box105"></div>
+</body>
+</html>
